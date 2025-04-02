@@ -1,14 +1,20 @@
-
 public class Cliente {
+    private final String cpf; 
+    private String nome;    
 
-	private String nome;
+    public Cliente(String cpf) {
+        this.cpf = cpf;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public String getCpf() {
+        return cpf;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public String getNome() {
+        return nome;
+    }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }

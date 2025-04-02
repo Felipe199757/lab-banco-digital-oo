@@ -5,7 +5,9 @@ public interface IConta {
 	
 	void depositar(double valor);
 	
-	void transferir(double valor, IConta contaDestino);
+	void pagarBoleto(double valor);
+	
+	void transferir(double valor, IConta contaDestino, String cpf);
 	
 	void imprimirExtrato();
 }
